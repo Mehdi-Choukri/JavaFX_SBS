@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="492.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CompetenceSceneAppController">
+   <children>
+      <Label layoutX="131.0" layoutY="69.0" text="Bienvenue" />
+      <Label layoutX="86.0" layoutY="22.0" prefHeight="17.0" prefWidth="165.0" text="Profile">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="labUserNom" layoutX="237.0" layoutY="69.0" text="Label" />
+      <TableView fx:id="tableID" layoutX="26.0" layoutY="137.0" prefHeight="132.0" prefWidth="514.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="59.0" text="ID" />
+          <TableColumn fx:id="colINTITULE" prefWidth="112.0" text="Intitulé" />
+            <TableColumn fx:id="colNV1" prefWidth="84.0" text="Niveau 1" />
+            <TableColumn fx:id="colNV2" prefWidth="72.0" text="Niveau 2" />
+            <TableColumn fx:id="colNV3" prefWidth="76.0" text="Niveau 3" />
+            <TableColumn fx:id="colDATE" prefWidth="110.0" text="Date d'aquisition" />
+        </columns>
+      </TableView>
+      <Label layoutX="124.0" layoutY="102.0" text="Voici vos compétences acquises" />
+      <Button fx:id="btnMODIF" layoutX="371.0" layoutY="303.0" mnemonicParsing="false" onAction="#updateCompetence" prefHeight="25.0" prefWidth="165.0" text="Modifier une compétence" />
+      <Button fx:id="btnSUPP" layoutX="372.0" layoutY="303.0" mnemonicParsing="false" onAction="#deleteCompetence" text="Supprimer une compétence" />
+      <Button fx:id="btnAJOUT" layoutX="371.0" layoutY="303.0" mnemonicParsing="false" onAction="#addCompetence" prefHeight="25.0" prefWidth="165.0" text="Ajouter une compétence" />
+      <Label layoutX="73.0" layoutY="307.0" text="Action" />
+      <ComboBox fx:id="comboACTION" layoutX="143.0" layoutY="303.0" onAction="#showAndHideBtn" prefHeight="25.0" prefWidth="182.0" />
+      <Label layoutX="72.0" layoutY="354.0" text="Compétence" />
+      <ComboBox fx:id="comboCOMP" layoutX="143.0" layoutY="350.0" prefHeight="25.0" prefWidth="182.0" />
+      <ComboBox fx:id="comboNIVEAU" layoutX="143.0" layoutY="391.0" prefHeight="25.0" prefWidth="182.0" />
+      <Label fx:id="lblNIVEAU" layoutX="72.0" layoutY="395.0" text="Niveau" />
+   </children>
+</AnchorPane>

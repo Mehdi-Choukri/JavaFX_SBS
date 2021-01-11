@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="482.0" prefWidth="577.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CompetenceController">
+   <children>
+      <Label fx:id="titleID" layoutX="161.0" layoutY="38.0" prefHeight="44.0" prefWidth="229.0" text="Visualisation des apprenants" textAlignment="CENTER" textFill="#1d125b">
+         <opaqueInsets>
+            <Insets bottom="5.0" left="50.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <HBox layoutX="129.0" layoutY="83.0" prefHeight="52.0" prefWidth="300.0" spacing="20.0">
+         <children>
+            <Label text="Apprenant :" />
+            <ComboBox fx:id="comboUSER" onAction="#Actions" prefWidth="150.0" />
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <TableView fx:id="tableAPP" layoutX="72.0" layoutY="142.0" prefHeight="86.0" prefWidth="406.0">
+        <columns>
+          <TableColumn fx:id="colCIN" prefWidth="75.0" text="CIN" />
+          <TableColumn fx:id="colNOM" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="colPRENOM" prefWidth="103.0" text="Prénom" />
+            <TableColumn fx:id="colUSER" prefWidth="75.0" text="Username" />
+            <TableColumn fx:id="colPROMO" prefWidth="75.0" text="Promotion" />
+        </columns>
+      </TableView>
+      <Label layoutX="156.0" layoutY="241.0" prefHeight="17.0" prefWidth="265.0" text="Les compétences aquises par l'apprenant" textFill="#3615a1">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TableView fx:id="tableCOMP" layoutX="46.0" layoutY="276.0" prefHeight="183.0" prefWidth="521.0">
+        <columns>
+          <TableColumn fx:id="colCOMP" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="colINTI" prefWidth="75.0" text="Intitulé" />
+          <TableColumn fx:id="colNV1" prefWidth="75.0" text="Niveau 1" />
+            <TableColumn fx:id="colNV2" prefWidth="75.0" text="Niveau 2" />
+            <TableColumn fx:id="colNV3" prefWidth="109.0" text="Niveau 3" />
+            <TableColumn fx:id="colDATE" prefWidth="111.0" text="Date d'aquisition" />
+        </columns>
+      </TableView>
+      <Label fx:id="labUserNom" layoutX="115.0" layoutY="21.0" text="Label" />
+      <Label layoutX="32.0" layoutY="21.0" text="Bienvenue " />
+      <Label layoutX="429.0" layoutY="21.0" text="Groupe " />
+      <Label fx:id="lblGroupe" layoutX="492.0" layoutY="21.0" text="Label" />
+   </children>
+</AnchorPane>
