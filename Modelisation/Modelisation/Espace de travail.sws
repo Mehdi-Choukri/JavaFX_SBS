@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner signature="Workspace" version="15.1.0.2850"?>
+<!-- Veuillez ne pas modifier ce fichier -->
+
+<Workspace>
+	<Local Expanded="Yes">
+		<Model Expanded="Yes" ID="{7815570E-E718-4714-B5E8-57A89A063409}" Name="DP_SBS" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="DP_SBS.mpd"/>
+		<Model Expanded="Yes" ID="{8C87D127-4EFA-4020-9F47-9CB68B9AE5E4}" Name="Données physiques_2" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="Données physiques_2.mpd"/>
+		<Model ID="{63475644-0DA2-4A27-B7CE-3C31090AD543}" Name="ModeleOrienteObjet_2" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="ModeleOrienteObjet_2.moo"/>
+		<Model Expanded="Yes" ID="{B2A4998F-919A-43C8-ABEF-E754B7C2FD77}" Name="Sequence_StepByStep" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="Sequence_StepByStep.moo"/>
+		<Model Expanded="Yes" ID="{4B91A1B3-696C-4ADD-9DD7-EEB723AAC930}" Name="Données logiques_1" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" URL="Données logiques_1.mld"/>
+		<Model Expanded="Yes" ID="{5F620E1F-57E0-4E4A-B3D2-09DD3DE7FD0A}" Name="ModeleOrienteObjet_4" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="ModeleOrienteObjet_4.moo"/>
+		<Model Expanded="Yes" ID="{23385FAD-03EE-4A2C-9AC6-7959509AF76D}" Name="Définition de cas d&#39;utilisation_1" Selected="Yes" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="Définition de cas d&#39;utilisation_1.moo"/>
+	</Local>
+	<BrowserModule Name="Référentiel"/>
+</Workspace>
